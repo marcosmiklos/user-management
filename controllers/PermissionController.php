@@ -8,7 +8,7 @@ use webvimark\modules\UserManagement\models\rbacDB\AbstractItem;
 use webvimark\modules\UserManagement\models\rbacDB\Permission;
 use webvimark\modules\UserManagement\models\rbacDB\Route;
 use webvimark\modules\UserManagement\models\rbacDB\search\PermissionSearch;
-use webvimark\components\AdminDefaultController;
+use webvimark\modules\UserManagement\components\AdminDefaultController;
 use webvimark\modules\UserManagement\UserManagementModule;
 use yii\db\Query;
 use Yii;
