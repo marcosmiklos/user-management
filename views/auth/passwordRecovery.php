@@ -14,7 +14,9 @@ $this->title = UserManagementModule::t('front', 'Password recovery');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div class="password-recovery">
+<div class="panel panel-info col-md-offset-4 col-md-4">
+    <div class="panel-body">
+<div class="  " style="background-color: #FFF;">
 
 	<h2 class="text-center"><?= $this->title ?></h2>
 
@@ -33,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<?= $form->field($model, 'email')->textInput(['maxlength' => 255, 'autofocus'=>true]) ?>
 
 	<?= $form->field($model, 'captcha')->widget(Captcha::className(), [
-		'template' => '<div class="row"><div class="col-sm-2">{image}</div><div class="col-sm-3">{input}</div></div>',
+		'template' => '<div class="row"><div class="col-sm-3">{image}</div><div class="col-md-offset-3 col-sm-6">{input}</div></div>',
 		'captchaAction'=>['/user-management/auth/captcha']
 	]) ?>
 
@@ -43,9 +45,16 @@ $this->params['breadcrumbs'][] = $this->title;
 				'<span class="glyphicon glyphicon-ok"></span> ' . UserManagementModule::t('front', 'Recover'),
 				['class' => 'btn btn-primary']
 			) ?>
+                        <?= Html::a(
+				'<span class="glyphicon glyphicon-arrow-left"></span> ' . UserManagementModule::t('front', 'Voltar'),
+                                ['auth/login'],
+				['class' => 'btn btn-default']
+			) ?>
 		</div>
 	</div>
 
 	<?php ActiveForm::end(); ?>
 
+</div>
+</div>
 </div>

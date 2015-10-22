@@ -30,7 +30,7 @@ return [
     'E-mail is invalid' => 'E-mail inválido',
     'Forgot password ?' => 'Esqueceu a senha?',
     'Incorrect username or password.' => 'Nome do usuário ou senha incorreta.',
-    'Login' => 'Usuário',
+    'Login' => 'Login',
     'Login has been taken' => 'Este login já existe',
     'Password' => 'Senha',
     'Password recovery' => 'Recuperação de senha',
